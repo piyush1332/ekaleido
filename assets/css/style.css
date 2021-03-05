@@ -215,6 +215,7 @@ body {
     font-family: 'thin_gotham';
     text-align: center;
     color: white;
+    display:block;
 }
 
 .about_page_heading {
@@ -269,13 +270,15 @@ body {
     height: 335px;
     overflow: scroll;
     color: white !important;
+    display:block;
 }
 
 .about_page_content p {
     height: 289px;
     overflow: scroll;
     color: white;
-    opacity: 1;
+    display:block;
+	opacity: 1;
 	/*background: linear-gradient(to right, #ffffff 0%, #e6e0ee 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;*/
