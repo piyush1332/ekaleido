@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<META name="viewport" content="initial-scale=0.66, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body ontouchmove = "getMousePosition(event);" id = "product_body">
+	<div class="container-fluid">
+		
+		<div class="back_btn_parent">
+			<img src="assets/images/ball.png" alt="" class="selected_back_token" id="selected_back_token">
+			<img src="assets/images/hole.png" class="back_btn" alt="">
+		</div>
+		<div class="product_background_heading">
+			<marquee direction="right">
+				<h2 class="middle_heading">PRODUCT</h2>
+			</marquee>
+			<!-- PRODUCT -->
+		</div>
+		
+		<div class="product_menu">
+			<div class="product_item_container">
+				<div class="col-xs-12" id="ads_page_circle">
+					<img src="assets/images/hole.png" class="product_hole" alt="">
+					<img src="assets/images/ball.png" alt="" class="selected_product_token" id="selected_ads_token">
+					<div class="menu_item_label">INTERACTIVE ADS</div>
+				</div>
+			</div>
+			<div class="product_item_container">
+				<div class="col-xs-12" id="video_page_circle">
+					<img src="assets/images/hole.png" class="product_hole" alt="">
+					<img src="assets/images/ball.png" alt="" class="selected_product_token" id="selected_video_token">
+					<div class="menu_item_label">INTERACTIVE VIDEO</div>
+				</div>
+			</div>
+			<div class="product_item_container">
+				<div class="col-xs-12" id="landing_page_circle">
+					<img src="assets/images/hole.png" class="product_hole" alt="">
+					<img src="assets/images/ball.png" alt="" class="selected_product_token" id="selected_lpage_token">
+					<div class="menu_item_label">INTERACTIVE LANDING PAGE</div>
+				</div>
+			</div>
+		<div class="footer">
+			<div class="company_logo">
+				<img src="assets/images/footer_logo.png" alt="">
+			</div>
+		</div>
+
+		<div draggable="true" class="floating_boll" id="floating_boll" onmousemove="stopFloating();" onmouseleave="resumeFloating();" ontouchmove="moveNavigationBoll(event);" ontouchend="resumeFloating(); selectMenuCircle();" >
+			<img src="assets/images/ball.png" alt="">
+		</div>
+		<div class="dummy_height_identifier" id ="dummy_height_identifier"></div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/DragDropTouch.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

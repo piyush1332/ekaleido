@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title>Mobile Version</title>
+	<meta charset="utf-8">
+	<META name="viewport" content="initial-scale=0.66, user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+</head>
+<body ontouchmove = "getMousePosition(event);" id="home_body">
+	<div class="content_holder container-fluid">
+		<div class="row">
+			<div class="menu_item_container col-xs-4" id="about_menu_circle">
+				<!-- <div class="menu_item">
+					<div class="inner_circle">
+						
+					</div>
+				</div> -->
+				<img src="assets/images/hole.png" class="home_hole" alt="">
+				<div class="menu_item_label">ABOUT US</div>
+				<img src="assets/images/ball.png" alt="" class="selected_menu_token" id="selected_about_token">
+			</div>
+
+			<div class="menu_item_container col-xs-4" id="work_menu_circle">
+				<!-- <div class="menu_item">
+					<div class="inner_circle">
+						
+					</div>
+				</div> -->
+				<img src="assets/images/hole.png" class="home_hole" alt="">
+				<div class="menu_item_label">WORK</div>
+				<img src="assets/images/ball.png" alt="" class="selected_menu_token" id="selected_work_token">
+			</div>
+
+			<div class="menu_item_container col-xs-4" id="product_menu_circle">
+<!-- 				<div class="menu_item">
+					<div class="inner_circle">
+						
+					</div>
+				</div>				 -->
+				<img src="assets/images/hole.png" class="home_hole" alt="">
+				<div class="menu_item_label">PRODUCT</div>
+				<img src="assets/images/ball.png" alt="" class="selected_menu_token" id="selected_product_token">
+			</div>
+		</div>
+		<div class="middle_content_heading row">
+			<marquee direction="left" class="col-xs-12">
+				<h3 class="border_text index_back">INTERACT</h3>
+			</marquee>
+			<marquee direction="right" class="col-xs-12">
+				<h2 class="middle_heading index_front">ENGAGE</h2>
+			</marquee>
+			<marquee direction="left" class="col-xs-12">
+				<h3 class="border_text index_back">CONNECT</h3>
+			</marquee>
+		</div>
+		<div class="bottom_menu row" >
+			<div class="menu_item_container col-xs-4" id="audience_menu_circle">
+				<!-- <div class="menu_item">
+					<div class="inner_circle">
+						
+					</div>
+				</div> -->
+				<img src="assets/images/hole.png" class="home_hole" alt="">
+				<div class="menu_item_label">AUDIENCE</div>
+				<img src="assets/images/ball.png" alt="" class="selected_menu_token" id="selected_audience_token">
+			</div>
+			<div class="menu_item_container col-xs-4 bottom_right" id="contact_menu_circle">
+				<!-- <div class="menu_item">
+					<div class="inner_circle">
+						
+					</div>
+				</div> -->
+				<img src="assets/images/hole.png" class="home_hole" alt="">
+				<div class="menu_item_label">CONTACT</div>
+				<img src="assets/images/ball.png" alt="" class="selected_menu_token" id="selected_contact_token">
+			</div>			
+		</div>
+		<div class="footer">
+			<div class="company_logo">
+				<!-- <img src="assets/images/footer.png"> -->
+				<img src="assets/images/footer_logo.png" alt="">
+				
+			</div>
+		</div>
+
+		<div draggable="true" class="floating_boll" id="floating_boll" onmousemove="stopFloating();" onmouseleave="resumeFloating();" ontouchmove="moveNavigationBoll(event);" ontouchend="resumeFloating(); selectMenuCircle();" >
+			<img src="assets/images/ball.png" alt="">
+		</div>
+		<div class="dummy_height_identifier" id ="dummy_height_identifier"></div>
+	</div>
+
+	<!-- <script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+	<script src="jquery.ui.touch-punch.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/DragDropTouch.js"></script>
+	
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

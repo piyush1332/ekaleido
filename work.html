@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Work</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<META name="viewport" content="initial-scale=0.66, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+</head>
+<body ontouchmove = "getMousePosition(event);" id="work_page_body">
+	<div class="work_page_content_holder">
+
+		<div class="back_btn_parent">
+			<img src="assets/images/ball.png" alt="" class="selected_back_token" id="selected_back_token">
+			<img src="assets/images/hole.png" class="back_btn" alt="">
+		</div>
+		<div class="work_page_heading">
+			<h3>Work</h3>
+		</div>
+		<div class="work_slider_holder">
+			<div class="background_layer">
+				
+			</div>
+			<div class="top_layer">
+				<div class="gallery js-flickity"
+				  data-flickity-options='{ "wrapAround": true }'>
+				  <div class="gallery-cell"></div>
+				  <div class="gallery-cell"></div>
+				  <div class="gallery-cell"></div>
+				  <div class="gallery-cell"></div>
+				  <div class="gallery-cell"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="company_logo">
+			<img src="assets/images/footer_logo.png" alt="">
+		</div>
+	</div>
+	<div draggable="true" class="floating_boll" id="floating_boll" onmousemove="stopFloating();" onmouseleave="resumeFloating();" ontouchmove="moveNavigationBoll(event);" ontouchend="resumeFloating(); selectMenuCircle();" >
+		<img src="assets/images/ball.png" alt="">
+	</div>
+	<div class="dummy_height_identifier" id ="dummy_height_identifier"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/DragDropTouch.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
