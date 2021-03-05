@@ -274,6 +274,8 @@ body {
 .about_page_content p {
     height: 289px;
     overflow: scroll;
+    color: white;
+    opacity: 1;
 	/*background: linear-gradient(to right, #ffffff 0%, #e6e0ee 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;*/
